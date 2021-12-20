@@ -1,5 +1,5 @@
 import ListItemLong from './ListItems/ListItemLong.js'
-
+import Api from './RapidApiKey.js'
 import React, { Component } from 'react'
 
 
@@ -17,7 +17,7 @@ export class GameList extends Component {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
-                "x-rapidapi-key": "ddbd8be2a9msh33549916a898969p161d78jsn9446c5507777"
+                "x-rapidapi-key": Api
             }
         })
             .then(response => response.json())
